@@ -1,0 +1,83 @@
+*{
+    margin: 3vw;
+}
+.test{
+    text-align: center;
+    margin: 3vw;
+    background-color: lightblue;
+    height: 15vh;
+    position: relative;
+    border: 2px solid black;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    min-height: 75vh;
+    margin: 2vw;
+}
+.article{
+    text-align: center;
+    margin: 3vw;
+    background-color: lightblue;
+    height: 40vh;
+    position: relative;
+    border: 2px solid black;
+}
+.div{
+    height: 15vh;
+    background-color: greenyellow;
+    position: relative;
+    text-align: center;
+    border: 2px solid black;
+}
+.aside1{
+    background-color: lightcoral;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 200px;
+    text-align: center;
+    width: 100vw;
+}
+.aside2{
+    background-color: lightblue;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 200px;
+    text-align: center;
+    width: 100vw;
+}
+.aside1, .aside2{
+    height: 106vh;
+    width: 8vw;
+    max-width: 295px;
+    background-color: lightgreen;
+    text-align: center;
+    border: 2px solid black;
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+.foot{
+    height: 5vh;
+    position: relative;
+    background-color: lightcoral;
+    text-align: center;
+    border: 2px solid black;
+}
+@media screen and (max-width: 1000px) {
+    .test, .article, .div, .aside1, .aside2, .foot {
+        width: 100%;
+        height: 10vh;
+        margin: 0;
+        display: block;
+    }
+    .aside1, .aside2 {
+        position: static;
+        display: block;
+        width: 500vh;
+    }
+}
